@@ -1,1 +1,26 @@
-
+{
+  "name": "My Todo List App",
+  "short_name": "TodoApp",
+  "description": "A sleek and modern to-do list application to manage your tasks efficiently.",
+  "version": "1.0.0",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff0000",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait",
+  "permissions": [
+    "notifications"
+  ]
+}
