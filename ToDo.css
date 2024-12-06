@@ -1,0 +1,124 @@
+*{
+    margin: 5;
+    padding: 0;
+    box-sizing:border-box;
+}
+body 
+{
+    font-family :" Poppins" ,sans-serif;
+    min-height: 100vh;
+}
+header
+{
+    font-size: 3rem
+    
+}
+header,form 
+{
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input
+{
+    padding: 15px;
+    width: 90%;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    box-shadow: 0px 0px 3px 0px grey;
+}
+form button
+{
+    padding: 7px;
+    border-radius: 10px;
+    margin-left: 15px;
+    border-style: none;
+    font-size: 2rem;
+    box-shadow: 0px 0px 3px 0px grey;
+    color: #d41c1c;
+    background : white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover 
+{
+    background: #d41c1c;
+    color: white;
+}
+.todo-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2px;
+    position: static;
+    width: 90%;
+}
+.todolist
+{
+    list-style: none;
+    width: 90%;
+}
+.todo
+{
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 0px 3px 0px grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.todo li
+{
+    flex: 1;
+    box-sizing: border-box;
+    width: 90%;
+}
+.checkbtn,.deletebtn
+{
+    background: #d41c1c;
+    color: white;
+    padding: 8px;
+    outline: none;
+    font-size: 1.5rem;
+    border-style: none;
+    border-radius: 5px;
+
+}
+.checkbtn {
+    background: rgb(249, 250, 249);
+    margin-right: 5px;
+    color: rgb(0, 0, 0);
+    transition: all .3s ease;
+}
+.deletebtn
+{
+    background: rgb(249, 250, 249);
+    color: crimson;
+    transition: all .3s ease;
+}
+.deletebtn:hover
+{
+    background: crimson;
+    color: white;
+}
+.completed
+{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: width 0.3s ease-out;
+}
+ion-icon{
+    pointer-events: none;
+}
+.slidedown
+{
+    transform: translateY(8rem);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
